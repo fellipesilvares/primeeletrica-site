@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prime Automação e Elétrica | Soluções Inteligentes e Seguras</title>
+  <meta name="description" content="Instalação elétrica, automação residencial e industrial, quadros de energia, iluminação LED e manutenção e reparo em Rondonópolis/MT. Peça seu orçamento via WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Prime Automação e Elétrica | Soluções Inteligentes e Seguras">
+  <meta property="og:description" content="Instalação elétrica, automação, quadros de energia e manutenção em Rondonópolis/MT. Orçamento sem compromisso pelo WhatsApp.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0F2233">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'sha256-QLgiGaUClBC9vhTME/42La7RkRm4+myyfXGwOp+ZYBc=' 'sha256-Jmdlz1MOG4r5uGNuwuX0VfKMozZzf5Blr7iudzilZHc='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            prime: {
+              navy: '#0B1724',
+              dark: '#0F2233',
+              card: '#162C40',
+              accent: '#F5C400',
+              accentHover: '#E0B200',
+              cyan: '#00E5FF',
+              lightText: '#E2E8F0',
+              muted: '#8E9AAB'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-yellow': '0 0 25px -5px rgba(245, 196, 0, 0.4)',
+            'glow-cyan': '0 0 25px -5px rgba(0, 229, 255, 0.3)',
+            'panel': '0 20px 40px -15px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tech-grid-bg antialiased selection:bg-prime-accent selection:text-prime-navy">
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- SPRITE DE ÍCONES SVG -->
+  <svg width="0" height="0" class="hidden" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <!-- CABEÇALHO -->
+  <header id="site-header" class="sticky top-0 z-50 bg-prime-navy/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- LOGO -->
+        <a href="#topo" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-prime-accent/10 border border-prime-accent/30 flex items-center justify-center text-prime-accent group-hover:bg-prime-accent group-hover:text-prime-navy transition-all duration-300 shadow-glow-yellow">
+            <svg class="w-6 h-6"><use href="#i-bolt"/></svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-extrabold text-xl tracking-wider text-white uppercase">PRIME</span>
+            <span class="text-xs font-medium text-prime-accent tracking-widest uppercase -mt-1">Automação &amp; Elétrica</span>
+          </div>
+        </a>
+
+        <!-- NAVEGAÇÃO DESKTOP -->
+        <nav aria-label="Principal" class="hidden md:flex items-center space-x-8 text-sm font-medium text-prime-lightText">
+          <a href="#servicos" class="hover:text-prime-accent transition-colors">Serviços</a>
+          <a href="#como-funciona" class="hover:text-prime-accent transition-colors">Como funciona</a>
+          <a href="#diferenciais" class="hover:text-prime-accent transition-colors">Diferenciais</a>
+          <a href="#duvidas" class="hover:text-prime-accent transition-colors">Dúvidas</a>
+          <a href="#contato" class="hidden lg:inline hover:text-prime-accent transition-colors">Contato</a>
+        </nav>
+
+        <!-- AÇÃO DIRETA -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-900/30 transition-all duration-300 hover:scale-105">
+            <svg class="w-5 h-5"><use href="#i-wa"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- BOTÃO MENU MOBILE -->
+        <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2 rounded-lg bg-prime-card text-slate-300 hover:text-white border border-slate-700" aria-label="Abrir menu">
+          <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- MENU MOBILE SLIDE -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 py-4 px-2 space-y-3 bg-prime-navy/95">
+        <a href="#servicos" class="block px-4 py-2.5 rounded-lg text-slate-200 hover:bg-prime-card hover:text-prime-accent font-medium">Serviços</a>
+        <a href="#como-funciona" class="block px-4 py-2.5 rounded-lg text-slate-200 hover:bg-prime-card hover:text-prime-accent font-medium">Como Funciona</a>
+        <a href="#diferenciais" class="block px-4 py-2.5 rounded-lg text-slate-200 hover:bg-prime-card hover:text-prime-accent font-medium">Diferenciais</a>
+        <a href="#duvidas" class="block px-4 py-2.5 rounded-lg text-slate-200 hover:bg-prime-card hover:text-prime-accent font-medium">Dúvidas Frequentes</a>
+        <a href="#contato" class="block px-4 py-2.5 rounded-lg text-slate-200 hover:bg-prime-card hover:text-prime-accent font-medium">Contato</a>
+        <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 rounded-xl mt-4">
+          <svg class="w-5 h-5"><use href="#i-wa"/></svg>
+          <span>Chamar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- HERO SECTION -->
+  <section id="topo" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    
+    <!-- Efeitos Visuais de Fundo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-prime-accent/10 rounded-full blur-[140px] pointer-events-none orb-a"></div>
+    <div class="absolute top-1/3 right-10 w-96 h-96 bg-prime-cyan/10 rounded-full blur-[120px] pointer-events-none orb-b"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Texto Principal do Hero -->
+        <div class="hero-stagger lg:col-span-7 space-y-8 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-prime-card border border-prime-accent/30 text-prime-accent text-xs sm:text-sm font-semibold tracking-wide shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-prime-accent animate-ping"></span>
+            Atendimento Rápido e Orçamento Sem Compromisso
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+            Instalação elétrica e automação com <span class="text-gradient">projeto, segurança e garantia</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            A Prime cuida da parte elétrica da sua casa, empresa ou condomínio. Escolha o que você precisa no nosso painel interativo ou fale direto conosco.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-prime-accent hover:bg-prime-accentHover text-prime-navy font-bold text-lg px-8 py-4 rounded-xl shadow-glow-yellow transition-all duration-300 hover:scale-105">
+              <svg class="w-6 h-6"><use href="#i-wa"/></svg>
+              <span>Chamar no WhatsApp</span>
+            </a>
+            <a href="#servicos" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-prime-card hover:bg-slate-800 text-white font-semibold text-lg px-8 py-4 rounded-xl border border-slate-700 transition-all duration-300">
+              Ver todos os serviços
+            </a>
+          </div>
+
+          <!-- Destaques / Vantagens rápidas -->
+          <div class="pt-4 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-300 text-left">
+            <div class="flex items-center gap-2.5">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-3.5 h-3.5"><use href="#i-check"/></svg>
+              </div>
+              <span>Orçamento Sem Compromisso</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-3.5 h-3.5"><use href="#i-check"/></svg>
+              </div>
+              <span>Serviços com Garantia</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-3.5 h-3.5"><use href="#i-check"/></svg>
+              </div>
+              <span>Residencial e Industrial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIMULADOR INTERATIVO DE DISJUNTORES / QUADRO -->
+        <div class="hero-panel lg:col-span-5">
+          <div class="bg-prime-card/90 border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-panel backdrop-blur-xl relative overflow-hidden">
+            
+            <!-- Linhas Elétricas Decorativas Topo -->
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-prime-accent via-prime-cyan to-emerald-400 bar-flow"></div>
+
+            <!-- Cabeçalho do Painel -->
+            <div class="flex items-center justify-between border-b border-slate-700/60 pb-5 mb-6">
+              <div>
+                <span class="text-xs uppercase tracking-wider font-semibold text-prime-accent">Painel Digital Interativo</span>
+                <h2 class="text-xl font-bold text-white font-display">Ligue o que você precisa</h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <span id="panel-status-led" class="w-3.5 h-3.5 rounded-full bg-slate-600"></span>
+                <span id="panel-status-text" class="text-xs font-mono text-slate-400">DESLIGADO</span>
+              </div>
+            </div>
+
+            <!-- Grade de Disjuntores -->
+            <div class="grid grid-cols-2 gap-3 mb-6" id="breakers-container">
+              
+              <!-- Disjuntor 1 -->
+              <button type="button" aria-pressed="false" data-service="Instalação Elétrica Geral" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C16</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Instalação Elétrica</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+              <!-- Disjuntor 2 -->
+              <button type="button" aria-pressed="false" data-service="Automação Residencial" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C20</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Automação Residencial</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+              <!-- Disjuntor 3 -->
+              <button type="button" aria-pressed="false" data-service="Automação Predial / Industrial" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C25</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Automação Industrial</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+              <!-- Disjuntor 4 -->
+              <button type="button" aria-pressed="false" data-service="Quadros &amp; Painéis Elétricos" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C32</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Quadros de Energia</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+              <!-- Disjuntor 5 -->
+              <button type="button" aria-pressed="false" data-service="Manutenção &amp; Reparos" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C10</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Manutenção e Reparo</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+              <!-- Disjuntor 6 -->
+              <button type="button" aria-pressed="false" data-service="Iluminação LED / Projetos" class="breaker-switch group bg-prime-navy border border-slate-700/80 hover:border-slate-500 p-3.5 rounded-xl flex items-center justify-between text-left">
+                <div class="flex flex-col pr-2">
+                  <span class="text-xs text-slate-400 font-mono">C16</span>
+                  <span class="text-xs font-semibold text-slate-200 mt-0.5 leading-tight">Iluminação LED</span>
+                </div>
+                <div class="w-8 h-14 bg-slate-800 rounded-md border border-slate-600 p-1 flex flex-col justify-between items-center shrink-0">
+                  <span class="indicator w-2 h-2 rounded-full bg-slate-600"></span>
+                  <div class="lever w-5 h-6 bg-slate-500 rounded-sm shadow-md"></div>
+                </div>
+              </button>
+
+            </div>
+
+            <!-- Resumo e Envio Dinâmico -->
+            <div class="space-y-4 pt-3 border-t border-slate-700/60">
+              <p id="panel-summary-text" class="text-xs text-slate-300 font-mono bg-prime-navy/80 p-3 rounded-lg border border-slate-800 min-h-[48px] flex items-center">
+                👉 Clique nos disjuntores acima para montar seu pedido personalizado.
+              </p>
+
+              <a id="btn-whatsapp-panel" href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-xl transition-all duration-300 opacity-90 hover:opacity-100">
+                <svg class="w-5 h-5"><use href="#i-wa"/></svg>
+                <span id="btn-panel-label">Enviar Seleção via WhatsApp</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- SEÇÃO DE SERVIÇOS (COM IMAGENS) -->
+<section id="servicos" class="py-24 bg-prime-navy relative border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <p class="text-xs font-bold uppercase tracking-widest text-prime-accent">Nossos Serviços</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Soluções completas do ponto elétrico à automação inteligente</h2>
+      <p class="text-slate-400">Atendemos com agilidade, normas de segurança NBR 5410 e garantia de execução perfeita.</p>
+    </div>
+
+    <!-- Card Grid de Serviços -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Serviço 1: Instalações Elétricas -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="instalacao.jpg" alt="Instalação Elétrica" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-prime-accent">Residencial &amp; Comercial</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Instalações Elétricas</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Pontos de tomada, iluminação, aterramento, infraestrutura de fiação para casas, escritórios, lojas, obras novas e reformas gerais.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Instala%C3%A7%C3%A3o%20El%C3%A9trica." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Serviço 2: Automação Residencial -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="automacao-residencial.jpg" alt="Automação Residencial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-prime-cyan">Casa Inteligente</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Automação Residencial</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Controle iluminação por cenas, cortinas, som ambiente, ar-condicionado e portões com praticidade direto pelo smartphone ou comando de voz.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Automa%C3%A7%C3%A3o%20Residencial." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Serviço 3: Automação Predial &amp; Industrial -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="automacao-industrial.jpg" alt="Automação Industrial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-emerald-400">Condomínios &amp; Indústria</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Automação Predial &amp; Industrial</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Automação para controle de bombas, controle de acesso, sensores, temporizadores e painéis de comando automatizados para condomínios e indústrias.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Automa%C3%A7%C3%A3o%20Industrial%2FPredial." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Serviço 4: Quadros e Painéis Elétricos -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="painel.jpg" alt="Quadros e Painéis Elétricos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-amber-400">Proteção Avançada</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Quadros e Painéis Elétricos</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Montagem, organização, reforma e adequação de quadros de distribuição equipados com DR (proteção de choque) e DPS (surto de tensão).
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Quadros%20de%20Energia." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Serviço 5: Manutenção e Reparo -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="manutencao.jpg" alt="Manutenção Elétrica" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-rose-400">Atendimento Rápido</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Manutenção e Reparo</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Diagnóstico preciso de disjuntor caindo, curtos-circuitos, quedas misteriosas de energia, choques elétricos e correção rápida do problema.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Preciso%20de%20Manuten%C3%A7%C3%A3o%20ou%20Reparo%20El%C3%A9trico." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Serviço 6: Iluminação e Projetos LED -->
+      <div class="bg-prime-card border border-slate-800 hover:border-prime-accent/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg group flex flex-col justify-between">
+        <div>
+          <div class="relative h-56 overflow-hidden bg-slate-900">
+            <img width="800" height="600" loading="lazy" decoding="async" src="iluminacao.jpg" alt="Iluminação LED" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 bg-prime-navy/80 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-prime-accent">Economia de Energia</div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-white font-display group-hover:text-prime-accent transition-colors">Iluminação e Projetos LED</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Projetos luminotécnicos modernos com fita LED, perfis de alumínio, lustres e substituição para tecnologia LED de alta eficiência energética.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://wa.me/556696938483?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Ilumina%C3%A7%C3%A3o%20LED." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-prime-accent hover:text-prime-navy text-slate-200 font-semibold py-2.5 rounded-xl border border-slate-700 transition-all duration-300">
+            <svg class="w-4 h-4"><use href="#i-wa"/></svg>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <!-- COMO FUNCIONA O ATENDIMENTO -->
+  <section id="como-funciona" class="py-20 bg-prime-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-prime-accent">Passo a Passo Simplificado</p>
+        <h2 class="font-display text-3xl font-extrabold text-white">Como funciona nosso atendimento</h2>
+        <p class="text-slate-400">Atendimento direto, ágil e sem complicações em 3 etapas simples.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 relative">
+        <div class="flow-line hidden md:block absolute top-16 left-[16.66%] right-[16.66%]" aria-hidden="true"></div>
+        
+        <!-- Passo 1 -->
+        <div class="bg-prime-card p-8 rounded-2xl border border-slate-800 relative z-10 flex flex-col items-center text-center group hover:border-prime-accent/40 transition-colors">
+          <div class="w-16 h-16 rounded-2xl bg-prime-accent/10 border border-prime-accent/30 text-prime-accent font-display font-extrabold text-2xl flex items-center justify-center mb-6 shadow-glow-yellow group-hover:scale-110 transition-transform">
+            01
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 font-display">Você chama no WhatsApp</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Explique sua necessidade. Envie fotos ou vídeos curtos do local para agilizar a pré-avaliação do serviço.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="bg-prime-card p-8 rounded-2xl border border-slate-800 relative z-10 flex flex-col items-center text-center group hover:border-prime-accent/40 transition-colors">
+          <div class="w-16 h-16 rounded-2xl bg-prime-cyan/10 border border-prime-cyan/30 text-prime-cyan font-display font-extrabold text-2xl flex items-center justify-center mb-6 shadow-glow-cyan group-hover:scale-110 transition-transform">
+            02
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 font-display">Recebe o orçamento detalhado</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Fazemos visita técnica se necessário, orçamos materiais e definimos o valor fixo combinado antes do início.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="bg-prime-card p-8 rounded-2xl border border-slate-800 relative z-10 flex flex-col items-center text-center group hover:border-prime-accent/40 transition-colors">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-display font-extrabold text-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+            03
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3 font-display">Executamos com garantia</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Nossa equipe executa com precisão, componentes normatizados e entrega tudo testado e funcionando com garantia.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS E SEGURANÇA -->
+  <section id="diferenciais" class="py-20 bg-prime-navy border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-prime-accent">Segurança &amp; Qualidade</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            Elétrica é assunto sério. Confie em quem segue normas técnicas.
+          </h2>
+          <p class="text-slate-300 leading-relaxed">
+            Uma instalação mal projetada pode resultar em desperdício de energia, curtos e acidentes graves. Na Prime, tratamos a segurança como prioridade inegociável.
+          </p>
+          
+          <div class="pt-2">
+            <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-prime-accent hover:bg-prime-accentHover text-prime-navy font-bold px-6 py-3 rounded-xl transition-all shadow-glow-yellow">
+              <svg class="w-5 h-5"><use href="#i-wa"/></svg>
+              <span>Fazer Orçamento Seguro</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+          
+          <div class="bg-prime-card p-6 rounded-xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-prime-accent/10 text-prime-accent flex items-center justify-center font-bold">
+              ⚡
+            </div>
+            <h3 class="text-lg font-bold text-white font-display">Norma Técnica NBR 5410</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Todas as instalações são projetadas e executadas estritamente de acordo com as normas brasileiras de segurança elétrica.
+            </p>
+          </div>
+
+          <div class="bg-prime-card p-6 rounded-xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-prime-cyan/10 text-prime-cyan flex items-center justify-center font-bold">
+              🛡️
+            </div>
+            <h3 class="text-lg font-bold text-white font-display">Proteção Efetiva</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Dimensionamento correto de Disjuntores, DR (proteção contra choque) e DPS (proteção contra raios e picos de tensão).
+            </p>
+          </div>
+
+          <div class="bg-prime-card p-6 rounded-xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+              📝
+            </div>
+            <h3 class="text-lg font-bold text-white font-display">Transparência Total</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Escopo claro, lista de materiais sem surpresas e valor fechado acordado previamente antes de ligar a primeira chave.
+            </p>
+          </div>
+
+          <div class="bg-prime-card p-6 rounded-xl border border-slate-800 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold">
+              📱
+            </div>
+            <h3 class="text-lg font-bold text-white font-display">Automação Intuitiva</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Sistemas inteligentes configurados de forma amigável, acompanhados de orientações práticas pós-instalação.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DÚVIDAS FREQUENTES (FAQ) -->
+  <section id="duvidas" class="py-20 bg-prime-dark border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center space-y-3">
+        <p class="text-xs font-bold uppercase tracking-widest text-prime-accent">Tire suas Dúvidas</p>
+        <h2 class="font-display text-3xl font-extrabold text-white">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-prime-card border border-slate-800 rounded-xl overflow-hidden transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer text-white font-semibold hover:text-prime-accent font-display select-none">
+            <span>Como funciona a solicitação de orçamento?</span>
+            <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 mt-2 leading-relaxed">
+            Você nos envia uma mensagem no WhatsApp detalhando o que precisa (se puder enviar foto ou vídeo do local/quadro, ajuda bastante). Quando o projeto exige, agendamos uma visita técnica no local. O orçamento é sem compromisso.
+          </div>
+        </details>
+
+        <details class="group bg-prime-card border border-slate-800 rounded-xl overflow-hidden transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer text-white font-semibold hover:text-prime-accent font-display select-none">
+            <span>Quais locais vocês atendem?</span>
+            <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 mt-2 leading-relaxed">
+            Atendemos casas, apartamentos, escritórios, lojas comerciais, condomínios e instalações industriais em Rondonópolis/MT e região próxima.
+          </div>
+        </details>
+
+        <details class="group bg-prime-card border border-slate-800 rounded-xl overflow-hidden transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer text-white font-semibold hover:text-prime-accent font-display select-none">
+            <span>Meu disjuntor vive caindo. O que devo fazer?</span>
+            <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 mt-2 leading-relaxed">
+            Não force o disjuntor a ficar ligado! Isso é sinal claro de sobrecarga na fiação ou curto-circuito. Desconecte aparelhos pesados daquela tomada e entre em contato imediatamente conosco via WhatsApp para um diagnóstico seguro.
+          </div>
+        </details>
+
+        <details class="group bg-prime-card border border-slate-800 rounded-xl overflow-hidden transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer text-white font-semibold hover:text-prime-accent font-display select-none">
+            <span>O que posso automatizar na minha residência?</span>
+            <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 mt-2 leading-relaxed">
+            Você pode automatizar pontos de iluminação, cortinas, aparelhos de ar-condicionado, portões eletrônicos, irrigação de jardim e equipamentos de som. Podemos criar cenas interativas e expansões modulares futuras.
+          </div>
+        </details>
+
+        <details class="group bg-prime-card border border-slate-800 rounded-xl overflow-hidden transition-all duration-200">
+          <summary class="flex items-center justify-between p-5 cursor-pointer text-white font-semibold hover:text-prime-accent font-display select-none">
+            <span>Os serviços prestados possuem garantia?</span>
+            <svg class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="p-5 pt-0 text-slate-300 text-sm border-t border-slate-800/50 mt-2 leading-relaxed">
+            Sim! Todos os nossos serviços têm garantia informada previamente na proposta técnica antes da contratação.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO E CALL TO ACTION FINAL -->
+  <section id="contato" class="py-20 bg-gradient-to-b from-prime-navy to-black border-t border-slate-800 relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-prime-card/80 border border-slate-700 p-8 sm:p-12 rounded-3xl shadow-2xl backdrop-blur-md grid lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
+            Pronto para transformar sua instalação elétrica com segurança?
+          </h2>
+          <p class="text-slate-300 text-lg">
+            Fale diretamente com nossa equipe técnica pelo WhatsApp. Atendimento rápido e sem burocracia.
+          </p>
+          <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105">
+            <svg class="w-6 h-6"><use href="#i-wa"/></svg>
+            <span>Iniciar Conversa no WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-slate-700/80 pt-8 lg:pt-0 lg:pl-10 space-y-4 text-sm text-slate-300">
+          <div class="flex items-start gap-3">
+            <span class="text-prime-accent font-bold text-lg">📱</span>
+            <div>
+              <strong class="block text-white">WhatsApp &amp; Telefone</strong>
+              <a href="tel:+556696938483" class="hover:text-prime-accent">(66) 9693-8483</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="text-prime-accent font-bold text-lg">📍</span>
+            <div>
+              <strong class="block text-white">Região de Atendimento</strong>
+              <span>Rondonópolis / MT e região</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="text-prime-accent font-bold text-lg">⏰</span>
+            <div>
+              <strong class="block text-white">Horário de Funcionamento</strong>
+              <span>Segunda a Sexta: 07h30 às 18h00</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="text-prime-accent font-bold text-lg">✉️</span>
+            <div>
+              <strong class="block text-white">E-mail Comercial</strong>
+              <a href="mailto:pablo.silva3698@gmail.com" class="hover:text-prime-accent">pablo.silva3698@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-black py-10 border-t border-slate-900 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-prime-accent/10 text-prime-accent flex items-center justify-center font-bold">
+          <svg class="w-4 h-4"><use href="#i-bolt"/></svg>
+        </div>
+        <div>
+          <span class="font-bold text-slate-300 text-sm">Prime Automação e Elétrica</span>
+          <p class="text-slate-500">R. Anizio de Queiroz Monteiro - Rondonópolis/MT</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-6 text-slate-400 text-sm">
+        <a href="#servicos" class="hover:text-white">Serviços</a>
+        <a href="#como-funciona" class="hover:text-white">Como Funciona</a>
+        <a href="#diferenciais" class="hover:text-white">Diferenciais</a>
+        <a href="#duvidas" class="hover:text-white">Dúvidas</a>
+        <a href="#contato" class="hover:text-white">Contato</a>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p>&copy; <span id="year-span">2026</span> Prime Automação e Elétrica. Todos os direitos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/556696938483" target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 shadow-emerald-900/50">
+    <svg class="w-7 h-7"><use href="#i-wa"/></svg>
+    <span class="hidden sm:inline text-sm">Chamar no WhatsApp</span>
+  </a>
+
+  <!-- SCRIPT DE INTERATIVIDADE DO SITE -->
+  <script src="script.js"></script>
+</body>
+</html>
